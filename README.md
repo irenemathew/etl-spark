@@ -1,6 +1,6 @@
 # ETL pipeline using Apache Spark SQL
 
-##Why Spark SQL?
+## Why Spark SQL?
 
 Spark SQL brings native support for SQL to Spark and streamlines the process of querying data stored both in RDDs and in external sources. Spark SQL conveniently blurs the lines between RDDs and relational tables. Unifying these powerful abstractions makes it easy for developers to intermix SQL commands querying external data with complex analytics, all within in a single application.
 Spark SQL is used in this case study to:
@@ -12,7 +12,7 @@ Spark SQL is used in this case study to:
 
 Spark SQL also includes a cost-based optimizer, columnar storage, and code generation to make queries fast. At the same time, it scales to thousands of nodes and multi-hour queries using the Spark engine, which provides full mid-query fault tolerance, without having to worry about using a different engine for historical data.
 
-##Implementation
+## Implementation
 
 This project aims to do 3 sets of transformations. A cleansing task is done initially inorder to maintain uniformity in data pattern. (Urls were not following a uniform pattern where https:// is missing for a few records)
 
@@ -52,7 +52,7 @@ This will help the business to understand the demand for a particular tradie in 
 | trade | tradie/trade |
 | search_frequency | number of times the corresponding tradie was searched |
 
-##Sample Output
+## Sample Output
 
 - user_details
 
@@ -89,7 +89,7 @@ This will help the business to understand the demand for a particular tradie in 
 |      201705|electricians|              28|
 |      201712|electricians|              28|
 
-##How to run the code?
+## How to run the code?
 
 1. Install Spark : [Reference](https://medium.freecodecamp.org/installing-scala-and-apache-spark-on-mac-os-837ae57d283f)
 2. Install Hive : [Reference](https://qiita.com/giwa/items/dabf0bb21ae242532423)
